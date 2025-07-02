@@ -1,7 +1,26 @@
 
 
+.navbar{
+    display: flex;
+    gap: $spacing-2xl;
+    margin-left: $spacing-3xl;
+    width: 100%;
+}
 
 .nav{
     margin: $spacing-m auto;
     display: flex;
+    align-items: center;
+}
+
+.flex{
+    display: flex; 
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.w100{
+    width: 100%;
 }

@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
     <title>index</title>
   </head>
   <body>
+    <div class="container">
     <%- include('./layout/nav'); -%>
 
     <h1 class="index-title">我是首頁</h1>
     <img src="../assets/images/dog.jpg" style="width: 300px;" alt="cat">
 
     <%- include('./layout/footer'); -%>
-
+      
+  </div>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

@@ -1,0 +1,39 @@
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+     font-family: "Noto Sans", sans-serif;
+     line-height: 1.5;
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+
+.link{
+    padding: $spacing-s 0;
+    color: $text-primary;
+}
+
+.link:hover{
+    color: $text-secondary;
+}
+
+.link:focus{
+    color: $text-primary;
+    box-shadow:inset 0 -2px 0 $text-primary;
+}
+
+.icon-btn{
+    display: inline-block;
+    color: $text-primary;
+    font-size: 24px;
+    line-height: 1;
+    padding: $spacing-s;
+}
+
+}
