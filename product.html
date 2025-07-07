@@ -12,11 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap"
       rel="stylesheet"
     />
+      <!-- <link rel="stylesheet" href="../assets/scss/all.scss"> -->
     <title>product</title>
-    <script type="module" crossorigin src="/shoesShop/assets/main-d5x8qZ56.js"></script>
-    <link rel="stylesheet" crossorigin href="/shoesShop/assets/main-DiM1VKDf.css">
+    <script type="module" crossorigin src="/shoesShop/assets/main-CQJiuDbL.js"></script>
+    <link rel="stylesheet" crossorigin href="/shoesShop/assets/main-BKLp9OKx.css">
   </head>
   <body>
+     <div class="container">
     <div class="nav margin-m-auto">
   <h1>
     <a href="index.html"><img src="/shoesShop/assets/Logo-RhEl2I3y.svg" alt="logo" /></a>
@@ -31,7 +33,6 @@
     <i class="bi bi-person icon-btn"><a href="#"></a></i>
   </div>
 </div>
-    <div class="container">
     <div class="padding-5xl-0">
       <div class="row">
         <div class="gallery col-7">
@@ -98,8 +99,8 @@
           <h2 class="h2 mb-m">Platform 404</h2>
           <div class="preis-container">
             <h5 class="h5 primary-color">NT$2,600</h5>
-            <p class="deleted">NT$3,200</p>
-          </div>
+            <p class="deleted">NT$3,200</p></div>
+
           <div class="mb-xl">
             <p class="mb-s">
               Platform 404
@@ -111,20 +112,56 @@
           </div>
           <p class="mb-xs">顏色</p>
           <ul class="flex gap-xs mb-l">
-            <li>
+            <li class="img-text-btn">
+                            <!-- 請問toggle-btn該怎麼寫，才會出現selected的狀態 -->
               <img class="w64" src="/shoesShop/assets/shoe_1-BUOGwROt.png" alt="shoe_1" />
               <p class="text-center">藍色</p>
             </li>
-            <li>
+            <li class="img-text-btn"> 
               <img class="w64" src="/shoesShop/assets/shoe_2-sPLvoXKo.png" alt="shoe_2" />
               <p class="text-center">卡其色</p>
             </li>
           </ul>
-          <p>test</p>
+          <p class="mb-xs">尺寸</p>
+          <div class="text-btn-list mb-xs">
+            <button class="btn text-btn">35(22.5cm)</button>
+            <button class=" btn text-btn">36(23.0cm)</button>
+            <button class=" btn text-btn">37(23.5cm)</button>
+            <button class=" btn text-btn">38(24.0cm)</button>
+            <button class=" btn text-btn">39(24.5cm)</button>
+            <button class=" btn text-btn">40(25.0cm)</button>
+            <button class=" btn text-btn">41(26.0cm)</button>
+            <button class=" btn text-btn disabled">42(26.5cm)</button>
+            <button class=" btn text-btn disabled">43(27.0cm)</button>
+          </div>
+          <div class="mb-3xl"><p class="danger">僅剩 3 雙</p>
+          </div>
+          <div class="flex gap-xs mb-xl">
+            <button class="btn neutral-btn half-width">
+              <div class="flex aic gap-xs jcc">
+                <i class="bi bi-heart"></i>
+                加入收藏
+              </div>
+              </button>
+              <button class="btn neutral-btn half-width">
+              <div class="flex aic gap-xs jcc">
+                <i class="bi bi-handbag"></i>
+                門市預約試穿
+              </div>
+              </button>
+        </div>
+
+<!-- 待處理:鞋子顏色改成button -->
+             <p>test</p>
+
+
+
+
+             
         </div>
       </div>
     </div>
-    <div class="margin-3xl-0">
+    <div class="padding-3xl-0">
           <h4 class="h4">你可能也喜歡...</h4>
           <ul class="ad-card-list">
             <li class="ad-card-item">
@@ -181,7 +218,8 @@
             </li>
     </div>
     </div>
-    <footer class="footer">
+    <div class="mt-2xl">
+      <footer class="footer">
   <div class="cta-banner">
     <h4 class="h4 cta-text">加入會員取得 9 折優惠</h4>
     <button class="btn neutral-btn">馬上註冊</button>
@@ -205,6 +243,6 @@
     </div>
   </div>
 </footer>
-
+    </div>
   </body>
 </html>
