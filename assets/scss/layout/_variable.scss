@@ -17,8 +17,14 @@ $gray600: #6C757D;
 $gray700: #495057;
 $gray900:#212529;
 
-$primary:       #C0FA73;
-$secondary:     #E8FEC5;
+$green200: #E8FEC5;
+$green300: #C0FA73;
+$green400: #57A203;
+$green500: #477A11;
+
+$primary:  $green300;
+$secondary: $green200;
+
 $danger: #D74F4F ;
 
 $text-primary:   $gray900;
@@ -26,11 +32,16 @@ $text-secondary: $gray600;
 $text-highlight: $primary;
 $text-negative: white;
 
+$text-green-light: $green400;
+$text-green-dark: $green500;
 
-$bg-green: $secondary;
+$bg-green-light:$green200;
+$bg-green:$green300;
 $bg: $gray100;
+$bg-black: $gray900;
+$bg-darkgray: $gray700;
 
-// $success:       $green;
-// $info:          $cyan;
-// $warning:       $yellow;
+$border: $gray300;
+
+
 

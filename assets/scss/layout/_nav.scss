@@ -1,6 +1,6 @@
 
 
-.navbar{
+.links-container{
     display: flex;
     gap: $spacing-2xl;
     margin-left: $spacing-3xl;
@@ -8,19 +8,8 @@
 }
 
 .nav{
-    margin: $spacing-m auto;
     display: flex;
-    align-items: center;
-}
-
-.flex{
-    display: flex; 
-}
-
-.jcsb{
     justify-content: space-between;
 }
 
-.w100{
-    width: 100%;
-}
+

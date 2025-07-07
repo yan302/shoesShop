@@ -1,4 +1,28 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background: $bg;
+}
+
+.cta-banner{
+  display: flex;
+  background: $bg-green-light;
+  padding: $spacing-l 0;
+  gap: $spacing-l;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright{
+  text-align: center;
+}
+
+.copyright-text{
+     font-size: 14px;   
+     color: $text-secondary;
+}
+
+.divider-bottom{
+    border-bottom: $border 1px solid;
+}
+.divider-top{
+    border-top: $border 1px solid;
 }

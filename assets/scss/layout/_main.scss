@@ -1,31 +1,66 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-body {
+body{
      font-family: "Noto Sans", sans-serif;
-     line-height: 1.5;
-
-a{
-    text-decoration: none;
+     line-height: 1.5; 
+     letter-spacing: 0.05em;
 }
 
 img{
     vertical-align: middle;
 }
 
+a{
+    text-decoration: none;
+}
+
+// text
+
+.h1,.h2,.h3,.h4,.h5,.h6{
+    line-height: 1.2; 
+    font-weight: 700;
+}
+
+.h1{
+    font-size: 40px;
+}
+
+.h2{
+    font-size: 32px;
+}
+
+.h3{
+    font-size: 28px;
+}
+
+.h4{
+    font-size: 24px;
+}
+
+.h5{
+    font-size: 20px;
+}
+
+.h6{
+    font-size: 16px;   
+}
+
+// button (text/icon/filled)
 
 .link{
     padding: $spacing-s 0;
     color: $text-primary;
-}
 
-.link:hover{
+&:hover{
     color: $text-secondary;
 }
 
-.link:focus{
+&:focus{
     color: $text-primary;
     box-shadow:inset 0 -2px 0 $text-primary;
+}
+
 }
 
 .icon-btn{
@@ -36,4 +71,189 @@ img{
     padding: $spacing-s;
 }
 
+.btn{
+    display: inline-block;
+    font-size: 16px;  
+    font-weight: 500; 
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    padding: $spacing-s $spacing-l;
+}
+
+.neutral-btn{
+    background:$bg-black;
+    color: white;
+
+    &:hover{
+    background:$bg-darkgray;
+}
+
+    &:focus{
+    box-shadow: 0 0 0 3px #2125291A;
+}
+
+}
+
+
+.primary-btn{
+    background:$bg-green;
+    color: $text-primary;
+
+    &:focus{
+    box-shadow: 0 0 0 3px rgba(192, 250, 115, 0.4);
+}
+    &:hover{
+    color: $text-green-light;
+}
+
+}
+
+
+
+
+
+
+
+
+
+// flex
+
+.flex{
+    display: flex; 
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+.jcc{
+    justify-content: center;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-end{
+align-items: flex-end;
+}
+
+.gap-xs{
+    gap: $spacing-xs;
+}
+
+.stretch{
+    justify-content: stretch;
+}
+
+.aic{
+    align-items: center;
+}
+
+// w/h
+
+.w100{
+    width: 100%;
+}
+
+.w64{
+width: 64px;
+}
+
+// spacing
+
+.margin-m-auto{
+    margin: $spacing-m auto;
+}
+
+.margin-m-0{
+    margin: $spacing-m 0;
+}
+
+.margin-3xl-0{
+    margin: $spacing-3xl 0;
+}
+
+.padding-3xl-0{
+    padding: $spacing-3xl 0;
+}
+
+.padding-5xl-0{
+    padding: $spacing-5xl 0;
+}
+
+.padding-s-0{
+    padding: $spacing-s 0;
+}
+
+.mb-xxs{
+    margin-bottom: $spacing-xxs;
+}
+
+.mb-xs{
+    margin-bottom: $spacing-xs;
+}
+
+.mb-s{
+    margin-bottom: $spacing-s;
+}
+
+.mb-m{
+    margin-bottom: $spacing-m;
+}
+
+.mb-l{
+    margin-bottom: $spacing-l;
+}
+
+.mb-xl{
+    margin-bottom: $spacing-xl;
+}
+
+.mb-2xl{
+    margin-bottom: $spacing-2xl;
+}
+
+.mb-3xl{
+    margin-bottom: $spacing-3xl;
+}
+
+.mt-xl{
+    margin-top: $spacing-xl;
+}
+
+.mt-2xl{
+    margin-top: $spacing-2xl;
+}
+
+.mt-3xl{
+    margin-top: $spacing-3xl;
+}
+
+.ml-xs{
+    margin-left: $spacing-xs;
+}
+
+// color
+
+.black{
+    color: $text-primary;
+}
+
+.primary-color{
+    color: $text-green-light;   
+}
+
+.deleted{
+    color: $gray500;
+    text-decoration: line-through;
+}
+
+.danger{
+    color: $danger;
+}
+
+//text
+
+.text-center{
+    text-align: center;
 }
