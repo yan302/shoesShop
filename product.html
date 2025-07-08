@@ -12,10 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap"
       rel="stylesheet"
     />
-      <!-- <link rel="stylesheet" href="../assets/scss/all.scss"> -->
     <title>product</title>
-    <script type="module" crossorigin src="/shoesShop/assets/main-CQJiuDbL.js"></script>
-    <link rel="stylesheet" crossorigin href="/shoesShop/assets/main-BKLp9OKx.css">
+    <script type="module" crossorigin src="/shoesShop/assets/main-HMEjTlSV.js"></script>
+    <link rel="stylesheet" crossorigin href="/shoesShop/assets/main-DTSKzU7a.css">
   </head>
   <body>
      <div class="container">
@@ -27,10 +26,10 @@
 
   <div class="flex flex-1">
     <div class="links-container">
-      <a class="link" href="shop.html">商品列表</a>
-      <a class="link" href="about.html">品牌故事</a>
+      <a class="link" href="#">商品列表</a>
+      <a class="link" href="#">品牌故事</a>
     </div>
-    <i class="bi bi-person icon-btn"><a href="#"></a></i>
+    <a href="#"><i class="icon-btn bi bi-person"></i></a></i>
   </div>
 </div>
     <div class="padding-5xl-0">
@@ -97,7 +96,7 @@
             </ol>
           </nav>
           <h2 class="h2 mb-m">Platform 404</h2>
-          <div class="preis-container">
+          <div class="flex margin-m-0 gap-xs">
             <h5 class="h5 primary-color">NT$2,600</h5>
             <p class="deleted">NT$3,200</p></div>
 
@@ -111,17 +110,18 @@
             </p>
           </div>
           <p class="mb-xs">顏色</p>
-          <ul class="flex gap-xs mb-l">
-            <li class="img-text-btn">
-                            <!-- 請問toggle-btn該怎麼寫，才會出現selected的狀態 -->
-              <img class="w64" src="/shoesShop/assets/shoe_1-BUOGwROt.png" alt="shoe_1" />
+          <div class="flex gap-xs mb-l">
+            <button class="img-text-btn">
+              <div class="mb-xs"><img class="w64" src="/shoesShop/assets/shoe_1-BUOGwROt.png" alt="shoe_1" />
+              </div>
               <p class="text-center">藍色</p>
-            </li>
-            <li class="img-text-btn"> 
-              <img class="w64" src="/shoesShop/assets/shoe_2-sPLvoXKo.png" alt="shoe_2" />
+            </button>
+            <button class="img-text-btn"> 
+              <div class="mb-xs"><img class="w64" src="/shoesShop/assets/shoe_2-sPLvoXKo.png" alt="shoe_2" />
+              </div>
               <p class="text-center">卡其色</p>
-            </li>
-          </ul>
+            </button>
+          </div>
           <p class="mb-xs">尺寸</p>
           <div class="text-btn-list mb-xs">
             <button class="btn text-btn">35(22.5cm)</button>
@@ -137,11 +137,12 @@
           <div class="mb-3xl"><p class="danger">僅剩 3 雙</p>
           </div>
           <div class="flex gap-xs mb-xl">
-            <button class="btn neutral-btn half-width">
+            <button class="btn save-btn half-width">
               <div class="flex aic gap-xs jcc">
-                <i class="bi bi-heart"></i>
+                <i class="bi bi-heart"></i><i class="bi bi-heart-fill"></i>
                 加入收藏
               </div>
+              <!-- 請問愛心按鈕怎麼做寫才可以切換狀態 -->
               </button>
               <button class="btn neutral-btn half-width">
               <div class="flex aic gap-xs jcc">
@@ -150,14 +151,41 @@
               </div>
               </button>
         </div>
+<ul> 
+  <li class="divider-bottom">
+  <div class="padding-s-0">
+    <div class="mb-xxs"><p class="label">商品材質</p></div>
+    <ul class="text-secondary">
+    <li>鞋面：合成皮革（Synthetic Leather）</li>
+    <li>內裡：透氣網布材質，提升舒適與排汗性</li>
+    <li>鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果</li>
+    <li>鞋帶：聚酯纖維，耐拉扯不易鬆脫</li></ul>
+  </div></li>
+    <li class="divider-bottom">
+  <div class="padding-s-0">
+    <div class="mb-xxs"><p class="label">購買須知</p></div>
+    <ul class="text-secondary">
+    <li>商品顏色因螢幕顯示可能略有差異，請以實品為準。）</li>
+    <li>建議首次穿著前試穿確認尺寸，避免影響退換貨權益。</li>
+    <li>本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。</li>
+</ul>
+  </div></li>
+    <li class="divider-bottom">
+  <div class="padding-s-0">
+    <div class="mb-xxs"><p class="label">保養方式</p></div>
+    <ul class="text-secondary">
+    <li>建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。</li>
+    <li>收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。</li>
+    <li>若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</li>
+</ul>
+  </div></li>
 
-<!-- 待處理:鞋子顏色改成button, 價錢並排 -->
-             <p>test</p>
 
 
 
 
-
+  
+</ul>
         </div>
       </div>
     </div>
