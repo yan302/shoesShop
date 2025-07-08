@@ -46,6 +46,10 @@ a{
     font-size: 16px;   
 }
 
+.label{
+    font-weight: 500; 
+}
+
 // button (text/icon/filled)
 
 .link{
@@ -69,6 +73,15 @@ a{
     font-size: 24px;
     line-height: 1;
     padding: $spacing-s;
+
+    &:hover{
+        color: $text-green-light;
+    }
+
+    &:active{
+        background: $bg-green-light;
+    }
+
 }
 
 .btn{
@@ -94,7 +107,6 @@ a{
 
 }
 
-
 .primary-btn{
     background:$bg-green;
     color: $text-primary;
@@ -108,12 +120,20 @@ a{
 
 }
 
+.outlined-btn{
+    box-shadow: 0 0 0 1px $text-primary;
 
+    &:focus{
+    background:$text-primary;
+    color: white;
+    box-shadow: 0 0 0 3px #2125291A;
+}
+    &:hover{
+    background:$text-primary;
+    color: white;
+}
 
-
-
-
-
+}
 
 
 // flex
@@ -139,10 +159,6 @@ align-items: flex-end;
 
 .gap-xs{
     gap: $spacing-xs;
-}
-
-.stretch{
-    justify-content: stretch;
 }
 
 .aic{
@@ -248,6 +264,10 @@ width: 64px;
     text-decoration: line-through;
 }
 
+.text-secondary{
+    color: $text-secondary;
+}
+
 .danger{
     color: $danger;
 }
@@ -256,4 +276,13 @@ width: 64px;
 
 .text-center{
     text-align: center;
+}
+
+//border
+
+.divider-bottom{
+    border-bottom: $border 1px solid;
+}
+.divider-top{
+    border-top: $border 1px solid;
 }

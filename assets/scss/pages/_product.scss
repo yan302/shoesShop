@@ -9,11 +9,6 @@
     width: calc((100% - $spacing-xs) / 2);
 }
 
-.price-container{
-    display: flex;
-    margin: $spacing-m 0;
-    row-gap: $spacing-xs;
-}
 
 .ad-card-list{
   display: flex;
@@ -68,4 +63,26 @@
 
 .half-width{
   width: calc((100% - $spacing-xs) / 2);
+}
+
+.save-btn{
+    box-shadow: 0 0 0 1px $text-primary;
+
+    .bi-heart-fill{
+       display: none;   
+    }
+
+    &:focus .bi-heart{
+    display: none;
+}
+
+    &:focus .bi-heart-fill{
+      display: inline;
+    }
+
+    &:hover{
+    background:$text-primary;
+    color: white;
+}
+
 }
