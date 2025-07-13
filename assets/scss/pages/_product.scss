@@ -2,22 +2,21 @@
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    gap: $spacing-xs;
+    gap: $spacing-8;
 }
 
 .gallery-item{
-    width: calc((100% - $spacing-xs) / 2);
+    width: calc((100% - $spacing-8) / 2);
 }
-
 
 .ad-card-list{
   display: flex;
-  column-gap: $spacing-l;
-  margin-top: $spacing-l;
+  column-gap: $spacing-24;
+  margin-top: $spacing-24;
 }
 
 .ad-card-item{
-  width: calc((100% - 3*$spacing-l) / 4);
+  width: calc((100% - 3*$spacing-24) / 4);
 }
 
 .img-text-btn{
@@ -41,14 +40,14 @@
 
 .text-btn-list{
     display: flex;
-    gap: $spacing-xs;
+    gap: $spacing-8;
     flex-wrap: wrap;
 }
 
 .text-btn{
         box-shadow: 0 0 0 1px $border;
         background: none;
-        padding: $spacing-s 0;
+        padding: $spacing-12 0;
         width: 160px;
 
         &:hover,&:focus{
@@ -62,7 +61,7 @@
 
 
 .half-width{
-  width: calc((100% - $spacing-xs) / 2);
+  width: calc((100% - $spacing-8) / 2);
 }
 
 .save-btn{

@@ -1,15 +1,20 @@
 
-
 .links-container{
     display: flex;
-    gap: $spacing-2xl;
-    margin-left: $spacing-3xl;
-    width: 100%;
+    gap: $spacing-40;   
 }
 
-.nav{
-    display: flex;
-    justify-content: space-between;
+.ml-auto{
+    margin-left: auto;
 }
 
 
+@media(max-width:768px){
+nav .margin-16-auto{
+    margin: $spacing-12 auto;
+}
+
+nav .links-container .link{
+    display: none;
+}
+}

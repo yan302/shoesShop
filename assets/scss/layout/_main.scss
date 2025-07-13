@@ -50,10 +50,11 @@ a{
     font-weight: 500; 
 }
 
+
 // button (text/icon/filled)
 
 .link{
-    padding: $spacing-s 0;
+    padding: $spacing-12 0;
     color: $text-primary;
 
 &:hover{
@@ -67,12 +68,32 @@ a{
 
 }
 
+
+
+.primary-link{
+    padding: $spacing-4 0;
+    color: $text-green-light;
+    box-shadow:inset 0 -1px 0 $text-green-light;
+
+&:hover{
+    color: $text-green-dark;
+    box-shadow:inset 0 -1px 0 $text-green-dark;
+
+}
+ 
+&:focus{
+    color: $text-green-dark;
+    box-shadow:inset 0 -2px 0 $text-green-dark;
+}
+
+}
+
 .icon-btn{
     display: inline-block;
     color: $text-primary;
     font-size: 24px;
     line-height: 1;
-    padding: $spacing-s;
+    padding: $spacing-12;
 
     &:hover{
         color: $text-green-light;
@@ -90,7 +111,7 @@ a{
     font-weight: 500; 
     border-radius: 4px;
     letter-spacing: 0.05em;
-    padding: $spacing-s $spacing-l;
+    padding: $spacing-12 $spacing-24;
 }
 
 .neutral-btn{
@@ -138,15 +159,20 @@ a{
 
 // flex
 
-.flex{
+.d-flex{
     display: flex; 
 }
 
-.jcsb{
+.justify-between{
     justify-content: space-between;
 }
-.jcc{
+
+.justify-center{
     justify-content: center;
+}
+
+.align-center{
+    align-items: center;
 }
 
 .flex-1{
@@ -157,13 +183,10 @@ a{
 align-items: flex-end;
 }
 
-.gap-xs{
-    gap: $spacing-xs;
+.gap-8{
+    gap: $spacing-8;
 }
 
-.aic{
-    align-items: center;
-}
 
 // w/h
 
@@ -177,77 +200,90 @@ width: 64px;
 
 // spacing
 
-.margin-m-auto{
-    margin: $spacing-m auto;
+.margin-0-auto{
+    margin: 0 auto;
+}
+
+.margin-16-auto{
+    margin: $spacing-16 auto;
 }
 
 .margin-m-0{
-    margin: $spacing-m 0;
+    margin: $spacing-16 0;
 }
 
+
+
 .margin-3xl-0{
-    margin: $spacing-3xl 0;
+    margin: $spacing-48 0;
 }
 
 .padding-3xl-0{
-    padding: $spacing-3xl 0;
+    padding: $spacing-48 0;
 }
 
-.padding-5xl-0{
-    padding: $spacing-5xl 0;
+.padding-64-0{
+    padding: $spacing-64 0;
 }
 
 .padding-s-0{
-    padding: $spacing-s 0;
+    padding: $spacing-4 0;
 }
 
-.mb-xxs{
-    margin-bottom: $spacing-xxs;
+.padding-32-0{
+ padding: $spacing-32 0;
 }
 
-.mb-xs{
-    margin-bottom: $spacing-xs;
+
+.mb-4{
+    margin-bottom: $spacing-4;
 }
 
-.mb-s{
-    margin-bottom: $spacing-s;
+.mb-8{
+    margin-bottom: $spacing-8;
 }
 
-.mb-m{
-    margin-bottom: $spacing-m;
+.mb-12{
+    margin-bottom: $spacing-12;
 }
 
-.mb-l{
-    margin-bottom: $spacing-l;
+.mb-16{
+    margin-bottom: $spacing-16;
 }
 
-.mb-xl{
-    margin-bottom: $spacing-xl;
+.mb-24{
+    margin-bottom: $spacing-24;
 }
 
-.mb-2xl{
-    margin-bottom: $spacing-2xl;
+.mb-32{
+    margin-bottom: $spacing-32;
 }
 
-.mb-3xl{
-    margin-bottom: $spacing-3xl;
+.mb-40{
+    margin-bottom: $spacing-40;
 }
 
-.mt-xl{
-    margin-top: $spacing-xl;
+.mb-48{
+    margin-bottom: $spacing-48;
 }
 
-.mt-2xl{
-    margin-top: $spacing-2xl;
+.mb-56{
+    margin-bottom: $spacing-56;
 }
 
-.mt-3xl{
-    margin-top: $spacing-3xl;
+.mb-64{
+    margin-bottom: $spacing-64;
 }
 
-.ml-xs{
-    margin-left: $spacing-xs;
+.mr-8{
+margin-right: $spacing-8;
 }
+
+.mr-48{
+    margin-right: 48px;
+}
+
+
 
 // color
 
@@ -271,6 +307,7 @@ width: 64px;
 .danger{
     color: $danger;
 }
+
 
 //text
 

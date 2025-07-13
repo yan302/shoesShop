@@ -5,14 +5,10 @@
 .cta-banner{
   display: flex;
   background: $bg-green-light;
-  padding: $spacing-l 0;
-  gap: $spacing-l;
+  padding: $spacing-24 0;
+  gap: $spacing-24;
   justify-content: center;
   align-items: center;
-}
-
-.copyright{
-  text-align: center;
 }
 
 .copyright-text{
@@ -20,3 +16,33 @@
      color: $text-secondary;
 }
 
+
+
+@media(max-width:768px){
+.footer .container.padding-64-0{
+  padding: $spacing-32 $spacing-12;
+}
+
+.footer .copyright-text.mb-8{ 
+  margin-bottom: $spacing-4;
+}
+
+.footer .d-flex{
+    flex-direction: column;
+}
+
+.footer .links-container{
+    flex-direction: column;
+    gap: $spacing-4;
+    margin-left: $spacing-12;
+}
+
+
+ }
+
+// .links-container{
+//     display: flex;
+//     gap: $spacing-40;
+//     margin-left: $spacing-48;
+//     width: 100%;
+// }

@@ -6,7 +6,7 @@
 }
 
 .breadcrumb-item+.breadcrumb-item::before{
-  margin: 0 $spacing-s;
+  margin: 0 $spacing-12;
   content: "/";
   color: $text-secondary;
 }
@@ -29,13 +29,13 @@
 .card-list{
   display: flex;
   flex-wrap: wrap;
-  column-gap: $spacing-l;
-  row-gap: $spacing-3xl;
-  margin-bottom: $spacing-3xl ;
+  column-gap: $spacing-24;
+  row-gap: $spacing-48;
+  margin-bottom: $spacing-48;
 }
 
 .card-item{
-  width: calc((100% - 2*$spacing-l) / 3);
+  width: calc((100% - 2*$spacing-24) / 3);
 }
 
 .card-link:hover{
@@ -43,13 +43,13 @@
 }
 
 .card-info{
-  margin-top: $spacing-s;
+  margin-top: $spacing-12;
 }
 
 
 .pagination{
   display: flex;
-  margin-bottom:$spacing-xl;
+  margin-bottom:$spacing-32;
   justify-content: center;
 }
 
@@ -73,7 +73,7 @@
 
 .disabled{
   opacity: 0.4;
-  pointer-events:   none;
+  pointer-events: none;
 }
 
 .selected{

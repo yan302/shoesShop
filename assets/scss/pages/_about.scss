@@ -1,0 +1,35 @@
+
+.about-header{
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true) no-repeat;
+    text-align: center;
+    color: white;
+    padding: 152px 0;
+    background-size: cover;
+}
+
+.quote{
+    padding: $spacing-32 0;
+    border-radius: 12px;
+    background-color: $green100;
+    text-align: center;
+    margin: 0 auto $spacing-48;
+}
+
+.intro-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.test{
+    background:greenyellow;
+}
+
+.dot{
+    list-style: disc;
+    margin-left: 24px;
+}
+
+.pipe-list{
+    padding-left: $spacing-12;  
+    border-left: 3px solid $border;
+}
