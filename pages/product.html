@@ -11,11 +11,18 @@
     <title>product</title>
   </head>
   <body>
-     <div class="container">
+
+  
     <%- include('./layout/nav'); -%>
+           <img
+            class="gallery-item md-display"
+            src="../assets/images/shoe_1-1.png"
+            alt="shoe_1-1"
+      />
+     <div class="container"> 
     <div class="padding-5xl-0">
       <div class="row">
-        <div class="gallery col-7">
+        <div class="gallery col-md-7 md-display-none">
           <img
             class="gallery-item"
             src="../assets/images/shoe_1-1.png"
@@ -81,7 +88,7 @@
             <h5 class="h5 primary-color">NT$2,600</h5>
             <p class="deleted">NT$3,200</p></div>
 
-          <div class="mb-32">
+          <div class="mb-32 mb-md-32">
             <p class="mb-12">
               Platform 404
               以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。
@@ -91,7 +98,7 @@
             </p>
           </div>
           <p class="mb-8">顏色</p>
-          <div class="d-flex gap-8 mb-24">
+          <div class="d-flex gap-8 mb-24 mb-md-24">
             <button class="img-text-btn">
               <div class="mb-8"><img class="w64" src="../assets/images/shoe_1.png" alt="shoe_1" />
               </div>
@@ -123,7 +130,6 @@
                 <i class="bi bi-heart"></i><i class="bi bi-heart-fill"></i>
                 加入收藏
               </div>
-              <!-- 請問愛心按鈕怎麼做寫才可以切換狀態 -->
               </button>
               <button class="btn neutral-btn half-width">
               <div class="d-flex aic gap-8 justify-center">
@@ -134,7 +140,7 @@
         </div>
 <ul> 
   <li class="divider-bottom">
-  <div class="padding-s-0">
+  <div class="padding-12-0">
     <div class="mb-4"><p class="label">商品材質</p></div>
     <ul class="text-secondary">
     <li>鞋面：合成皮革（Synthetic Leather）</li>
@@ -143,7 +149,7 @@
     <li>鞋帶：聚酯纖維，耐拉扯不易鬆脫</li></ul>
   </div></li>
     <li class="divider-bottom">
-  <div class="padding-s-0">
+  <div class="padding-12-0">
     <div class="mb-4"><p class="label">購買須知</p></div>
     <ul class="text-secondary">
     <li>商品顏色因螢幕顯示可能略有差異，請以實品為準。）</li>
@@ -152,7 +158,7 @@
 </ul>
   </div></li>
     <li class="divider-bottom">
-  <div class="padding-s-0">
+  <div class="padding-12-0">
     <div class="mb-4"><p class="label">保養方式</p></div>
     <ul class="text-secondary">
     <li>建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。</li>
@@ -164,7 +170,7 @@
         </div>
       </div>
     </div>
-    <div class="padding-3xl-0 mb-48">
+    <div class="padding-48-0 mb-48">
           <h4 class="h4">你可能也喜歡...</h4>
           <ul class="ad-card-list">
             <li class="ad-card-item">
@@ -225,3 +231,6 @@
     <script type="module" src="../main.js"></script>
   </body>
 </html>
+
+
+ /* 門市預約試穿 button + 可能會喜歡 Card 

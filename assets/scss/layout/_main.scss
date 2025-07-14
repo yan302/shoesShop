@@ -15,10 +15,6 @@ a{
     text-decoration: none;
 }
 
-.container{
-  max-width: 1296px;
-  margin: 0 auto;
-}
 
 // text
 
@@ -55,7 +51,21 @@ a{
     font-weight: 500; 
 }
 
+@media(max-width:768px){
 
+ .h3{
+    font-size: 24px;
+  }
+ 
+  .h4{
+        font-size: 20px;
+  }
+
+    .h5{
+    font-size: 16px;
+}
+
+}
 // button (text/icon/filled)
 
 .link{
@@ -219,11 +229,11 @@ width: 64px;
 
 
 
-.margin-3xl-0{
+.margin-48-0{
     margin: $spacing-48 0;
 }
 
-.padding-3xl-0{
+.padding-48-0{
     padding: $spacing-48 0;
 }
 
@@ -231,8 +241,8 @@ width: 64px;
     padding: $spacing-64 0;
 }
 
-.padding-s-0{
-    padding: $spacing-4 0;
+.padding-12-0{
+    padding: $spacing-12 0;
 }
 
 .padding-32-0{
