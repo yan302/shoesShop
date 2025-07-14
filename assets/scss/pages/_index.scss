@@ -5,9 +5,6 @@
   margin: 0 auto;
 }
 
-@media(max-width:768px){
-
-}
 
 .breadcrumb-item+.breadcrumb-item::before{
   margin: 0 $spacing-12;
@@ -84,3 +81,36 @@
   background: $bg-green; 
 }
 
+@media(max-width:768px){
+
+  .mb-32{
+    margin-bottom: 16px;
+  }
+
+   .mb-24{
+    margin-bottom: 12px;
+   }
+
+   .col-2{
+    display: none;
+   }
+
+.card-list{
+  column-gap: $spacing-12;
+  row-gap: $spacing-24;
+  margin-bottom: $spacing-32;
+}
+
+   .card-item{
+    width: calc((100% - $spacing-12) / 2);
+}
+
+.pagination{
+    margin-bottom:$spacing-16;
+}
+
+.d-flex.mb-48{
+  margin-bottom: 24px;
+}
+
+}
