@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+@media(max-width:768px){
+
+}
+
 .breadcrumb-item+.breadcrumb-item::before{
   margin: 0 $spacing-12;
   content: "/";

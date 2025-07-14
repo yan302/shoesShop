@@ -33,3 +33,42 @@
     padding-left: $spacing-12;  
     border-left: 3px solid $border;
 }
+
+@media(max-width:768px){
+    .about-header{
+    padding: 88px 0;
+
+    &.mb-64{
+        margin-bottom: 32px;
+    }
+
+    & .h1.mb-16{
+        margin-bottom: $spacing-8;
+    }
+
+    }
+    
+    .quote{
+    padding: $spacing-24 $spacing-24;
+    margin: 0 auto $spacing-32; 
+    text-align: left; 
+}
+
+    .mb-24{
+        margin-bottom: 16px;
+    }
+
+    .mb-16{
+        margin-bottom: 12px;
+    }
+
+    .mb-48{
+        margin-bottom: 32px;
+    }
+
+    .mb-64,.mb-56{
+        margin-bottom: 32px;
+    }
+
+    
+}
