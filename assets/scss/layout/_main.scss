@@ -129,6 +129,12 @@ a{
     padding: $spacing-12 $spacing-24;
 }
 
+@media(max-width:768px){ 
+    .btn{
+            padding: $spacing-12 $spacing-12;
+}
+ }
+
 .neutral-btn{
     background:$bg-black;
     color: white;
@@ -322,6 +328,12 @@ margin-right: $spacing-8;
 .danger{
     color: $danger;
 }
+
+.display-none{ display: none;}
+
+@media(max-width:768px){ 
+.display-none{ display: inline-block;}
+ }
 
 
 //text

@@ -99,7 +99,9 @@
 }
 
 .gallery{
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
 }
 
 .row .col .mb-24{
@@ -134,5 +136,55 @@ margin-bottom: 32px;
 padding: $spacing-40 0;
 margin-bottom: $spacing-24;
 }
+
+.ad-card-list{
+  overflow: auto;
+  column-gap: $spacing-16;
+  margin-top: $spacing-16;
+}
+
+.ad-card-item{
+     flex: 0 0 80%;
+}
+
+
+.half-width{
+  width: 100%;
+}
+
+
+.save-btn{
+    box-shadow: none;
+
+    .bi-heart-fill{
+       display: none;   
+    }
+
+    &:focus .bi-heart{
+    display: none;
+}
+
+    &:focus .bi-heart-fill{
+      display: inline;
+    }
+
+    &:hover{
+    background:none;
+    color:$text-primary;
+}
+
+
+} 
+
+.container.md-pr-0{
+    padding-right: 0;
+}
+
+
+.gallery.col-md-7{
+    padding: 0;
+}
+
+
 
 }
