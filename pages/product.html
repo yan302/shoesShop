@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <%- include('./layout/head.ejs'); -%>
     <title>product</title>
   </head>
   <body>
-    <%- include('./layout/nav'); -%>
+    <div class="container"><%- include('./layout/nav'); -%></div>
      <div class="container"> 
     <div class="padding-5xl-0">
       <div class="row">
-        <div class="gallery col-md-7">
+        <div class="gallery-list col-md-7">
           <img
             class="gallery-item"
             src="../assets/images/shoe_1-1.png"
@@ -120,9 +114,9 @@
           <div class="d-flex gap-8 mb-32">
             <button class="btn save-btn half-width md-display-none">
               <div class="d-flex align-center gap-8 justify-center">
-                <i class="bi bi-heart"></i><i class="bi bi-heart-fill"></i>
+                <a href="favorites.html"><i class="bi bi-heart"></i><i class="bi bi-heart-fill"></i>
                 加入收藏
-              </div>
+              </a></div>
               </button>
               <button class="btn neutral-btn half-width">
               <div class="d-flex aic gap-8 justify-center">
@@ -229,6 +223,3 @@
     <script type="module" src="../main.js"></script>
   </body>
 </html>
-
-
- <!-- 門市預約試穿 button + 可能會喜歡 Card  -->

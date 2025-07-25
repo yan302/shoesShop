@@ -1,7 +1,10 @@
 @import './layout/reset.scss';
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import './layout/variable.scss';
+
 @import './layout/main.scss';
+@import './layout/utilities.scss';
+@import './layout/component-button.scss';
 @import './layout/bootstrap-grid.scss';
 
 
@@ -11,5 +14,7 @@
 
 
 @import './pages/index.scss';
+@import './pages/product-list.scss';
 @import './pages/product.scss';
 @import './pages/about.scss';
+@import './pages/favorites.scss';

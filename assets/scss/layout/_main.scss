@@ -3,22 +3,32 @@
 
 body{
      font-family: "Noto Sans", sans-serif;
-     line-height: 1.5; 
      letter-spacing: 0.05em;
+}
+
+p,a,li { 
+    line-height: 1.5; 
 }
 
 img{
     vertical-align: middle;
+    display: block;
+    width: 100%;
 }
 
 a{
+    color: inherit;
     text-decoration: none;
 }
 
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+}
 
 // text
 
-.h1,.h2,.h3,.h4,.h5,.h6{
+.h1,.h2,.h3,.h4,.h5,.h6,.display1,.display2{
     line-height: 1.2; 
     font-weight: 700;
 }
@@ -51,302 +61,44 @@ a{
     font-weight: 500; 
 }
 
+.display1{
+    font-size: 64px;   
+}
+
+.display2{
+    font-size: 48px;   
+}
+
+
 @media(max-width:768px){
+
+.display1{
+    font-size: 48px;   
+}
+
+.display2{
+    font-size: 40px;   
+}
+
+.h4-md{
+    font-size: 24px;
+}
 
  .h3{
     font-size: 24px;
   }
  
-  .h4{
-        font-size: 20px;
+ .h4{
+    font-size: 20px;
   }
 
-    .h5{
+ .h5{
     font-size: 16px;
 }
 
-}
-// button (text/icon/filled)
-
-.link{
-    padding: $spacing-12 0;
-    color: $text-primary;
-
-&:hover{
-    color: $text-secondary;
-}
-
-&:focus{
-    color: $text-primary;
-    box-shadow:inset 0 -2px 0 $text-primary;
-}
-
+.h5-md{
+    font-size: 20px;
 }
 
 
-
-.primary-link{
-    padding: $spacing-4 0;
-    color: $text-green-light;
-    box-shadow:inset 0 -1px 0 $text-green-light;
-
-&:hover{
-    color: $text-green-dark;
-    box-shadow:inset 0 -1px 0 $text-green-dark;
-
-}
- 
-&:focus{
-    color: $text-green-dark;
-    box-shadow:inset 0 -2px 0 $text-green-dark;
-}
-
-}
-
-.icon-btn{
-    display: inline-block;
-    color: $text-primary;
-    font-size: 24px;
-    line-height: 1;
-    padding: $spacing-12;
-
-    &:hover{
-        color: $text-green-light;
-    }
-
-    &:active{
-        background: $bg-green-light;
-    }
-
-}
-
-.btn{
-    display: inline-block;
-    font-size: 16px;  
-    font-weight: 500; 
-    border-radius: 4px;
-    letter-spacing: 0.05em;
-    padding: $spacing-12 $spacing-24;
-}
-
-@media(max-width:768px){ 
-    .btn{
-            padding: $spacing-12 $spacing-12;
-}
  }
-
-.neutral-btn{
-    background:$bg-black;
-    color: white;
-
-    &:hover{
-    background:$bg-darkgray;
-}
-
-    &:focus{
-    box-shadow: 0 0 0 3px #2125291A;
-}
-
-}
-
-.primary-btn{
-    background:$bg-green;
-    color: $text-primary;
-
-    &:focus{
-    box-shadow: 0 0 0 3px rgba(192, 250, 115, 0.4);
-}
-    &:hover{
-    color: $text-green-light;
-}
-
-}
-
-.outlined-btn{
-    box-shadow: 0 0 0 1px $text-primary;
-
-    &:focus{
-    background:$text-primary;
-    color: white;
-    box-shadow: 0 0 0 3px #2125291A;
-}
-    &:hover{
-    background:$text-primary;
-    color: white;
-}
-
-}
-
-
-// flex
-
-.d-flex{
-    display: flex; 
-}
-
-.justify-between{
-    justify-content: space-between;
-}
-
-.justify-center{
-    justify-content: center;
-}
-
-.align-center{
-    align-items: center;
-}
-
-.flex-1{
-    flex: 1;
-}
-
-.flex-end{
-align-items: flex-end;
-}
-
-.gap-8{
-    gap: $spacing-8;
-}
-
-
-// w/h
-
-.w100{
-    width: 100%;
-}
-
-.w64{
-width: 64px;
-}
-
-// spacing
-
-.margin-0-auto{
-    margin: 0 auto;
-}
-
-.margin-16-auto{
-    margin: $spacing-16 auto;
-}
-
-.margin-m-0{
-    margin: $spacing-16 0;
-}
-
-
-
-.margin-48-0{
-    margin: $spacing-48 0;
-}
-
-.padding-48-0{
-    padding: $spacing-48 0;
-}
-
-.padding-64-0{
-    padding: $spacing-64 0;
-}
-
-.padding-12-0{
-    padding: $spacing-12 0;
-}
-
-.padding-32-0{
- padding: $spacing-32 0;
-}
-
-
-.mb-4{
-    margin-bottom: $spacing-4;
-}
-
-.mb-8{
-    margin-bottom: $spacing-8;
-}
-
-.mb-12{
-    margin-bottom: $spacing-12;
-}
-
-.mb-16{
-    margin-bottom: $spacing-16;
-}
-
-.mb-24{
-    margin-bottom: $spacing-24;
-}
-
-.mb-32{
-    margin-bottom: $spacing-32;
-}
-
-.mb-40{
-    margin-bottom: $spacing-40;
-}
-
-.mb-48{
-    margin-bottom: $spacing-48;
-}
-
-.mb-56{
-    margin-bottom: $spacing-56;
-}
-
-.mb-64{
-    margin-bottom: $spacing-64;
-}
-
-.mr-8{
-margin-right: $spacing-8;
-}
-
-.mr-48{
-    margin-right: 48px;
-}
-
-
-
-// color
-
-.black{
-    color: $text-primary;
-}
-
-.primary-color{
-    color: $text-green-light;   
-}
-
-.deleted{
-    color: $gray500;
-    text-decoration: line-through;
-}
-
-.text-secondary{
-    color: $text-secondary;
-}
-
-.danger{
-    color: $danger;
-}
-
-.display-none{ display: none;}
-
-@media(max-width:768px){ 
-.display-none{ display: inline-block;}
- }
-
-
-//text
-
-.text-center{
-    text-align: center;
-}
-
-//border
-
-.divider-bottom{
-    border-bottom: $border 1px solid;
-}
-.divider-top{
-    border-top: $border 1px solid;
-}

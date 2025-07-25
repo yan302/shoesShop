@@ -1,0 +1,11 @@
+
+@media(max-width:768px){ 
+
+    .container.padding-64-0.col-md-6{
+        padding: $spacing-24 $spacing-12;
+    }
+
+    .text-center.mb-32{
+        margin-bottom: $spacing-24;
+    }
+}

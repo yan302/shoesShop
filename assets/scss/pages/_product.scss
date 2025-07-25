@@ -1,5 +1,5 @@
 
-.gallery{
+.gallery-list{
     display: flex;
     flex-wrap: wrap;
     gap: $spacing-8;
@@ -7,6 +7,8 @@
 
 .gallery-item{
     width: calc((100% - $spacing-8) / 2);
+    object-fit: cover;
+    height: auto;
 }
 
 .md-display{

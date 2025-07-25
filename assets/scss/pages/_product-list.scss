@@ -1,0 +1,96 @@
+.breadcrumb-item+.breadcrumb-item::before{
+  margin: 0 $spacing-12;
+  content: "/";
+  color: $text-secondary;
+}
+
+.breadcrumb-link{
+    color: $text-secondary;
+    &:hover{
+          color: $text-primary;
+    }
+    &:focus{
+    color: $text-primary;
+    box-shadow:inset 0 -2px 0 $text-primary;
+    }
+}
+
+.current{
+    color: $text-primary;
+}
+
+.card-list{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: $spacing-24;
+  row-gap: $spacing-48;
+  margin-bottom: $spacing-48;
+}
+
+.card-item{
+  width: calc((100% - 2*$spacing-24) / 3);
+}
+
+.card-link:hover{
+  opacity: 0.8;
+}
+
+
+
+.pagination{
+  display: flex;
+  margin-bottom:$spacing-32;
+  justify-content: center;
+}
+
+.pagination-btn{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover{
+  background: $bg;
+  }
+
+  &:active{
+  background: $bg-green;
+  }
+}
+
+
+.disabled{
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.selected{
+  background: $bg-green; 
+}
+
+@media(max-width:768px){
+
+   .col-2{
+    display: none;
+   }
+
+.card-list{
+  column-gap: $spacing-12;
+  row-gap: $spacing-24;
+  margin-bottom: $spacing-32;
+}
+
+   .card-item{
+    width: calc((100% - $spacing-12) / 2);
+}
+
+.pagination{
+    margin-bottom:$spacing-16;
+}
+
+.d-flex.mb-48{
+  margin-bottom: 24px;
+}
+
+}
