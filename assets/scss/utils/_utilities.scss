@@ -9,20 +9,19 @@
    display: inline-block; 
 }
 
-.display-none{ display: none;}
-
-.d-md-block{
-display: none;
-}
-
-@media(max-width:768px){ 
-.d-md-block{ display: block;} 
-
-.d-md-none{display: none;}
-}
-
 .overflow-hidden{
     overflow: hidden;
+}
+
+.display-none{ display: none;}
+
+.card-item.show-sm { display: none; }
+
+
+@media(max-width:768px) { 
+
+.d-md-none{display: none; }
+.card-item.show-sm { display: block;}
 }
 
 // flex
