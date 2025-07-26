@@ -7,13 +7,14 @@
 .breadcrumb-link{
     color: $text-secondary;
     &:hover{
-          color: $text-primary;
+    color: $text-primary;
     }
     &:focus{
     color: $text-primary;
     box-shadow:inset 0 -2px 0 $text-primary;
     }
 }
+
 
 .current{
     color: $text-primary;

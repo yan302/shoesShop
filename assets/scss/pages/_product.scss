@@ -8,8 +8,10 @@
 .gallery-item{
     width: calc((100% - $spacing-8) / 2);
     object-fit: cover;
-    height: auto;
 }
+
+ 
+
 
 .md-display{
     display: none;
@@ -91,6 +93,11 @@
 }
 
 }
+@media(max-width:992px){ 
+ .half-width{ width: auto; }
+}
+
+
 
 
 @media(max-width:768px){
@@ -100,7 +107,7 @@
     margin-bottom: $spacing-24;
 }
 
-.gallery{
+.gallery-list{
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;

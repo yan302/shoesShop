@@ -16,9 +16,13 @@
      color: $text-secondary;
 }
 
+.logo{
+  max-height: 46px;
+}
 
 
 @media(max-width:768px){
+
 .footer .container.padding-64-0{
   padding: $spacing-32 $spacing-12;
 }
@@ -37,6 +41,9 @@
     margin-left: $spacing-12;
 }
 
+.align-md-start{
+ align-items: flex-start;  
+}
 
  }
 

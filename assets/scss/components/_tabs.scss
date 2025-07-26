@@ -1,0 +1,12 @@
+
+.tab{
+    padding: $spacing-12 0;
+    font-weight:500 ;
+    color: $text-secondary;
+    border-bottom: $border 2px solid;
+
+    &.active{    
+    color: $text-primary;
+    border-bottom: $text-primary 2px solid;}
+
+}

@@ -1,0 +1,50 @@
+
+.login-banner{
+background:no-repeat;
+background-position: center;
+background-size: cover;
+border-radius: 12px;
+}
+
+.login-banner-text{
+padding: 70px 40px 0;
+}
+
+.social-login-button{
+    padding: 12px;
+    background: white;
+    border: $border 1px solid;
+    border-radius: 4px;
+}
+
+.social-icon{
+    max-width: 40px;
+    height: auto;
+    margin-right: 12px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    padding: 120px 80px;
+    background: url(/assets/images/login-bg.png);
+    border-radius: 12px;
+}
+
+@media(max-width:786px){
+.login-banner{
+border-radius: 0;
+height: 240px;
+}
+
+.login-banner-text{
+padding: 24px;
+}
+
+.login-form{
+    padding: 32px 12px;
+    border-radius: 0;
+    background: white;
+}
+
+}
